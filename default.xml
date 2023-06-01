@@ -3,11 +3,14 @@
 
   <remote  name="aosp"
     fetch="https://android.googlesource.com/" />
+
+  <remote  name="github"
+    fetch="https://github.com" />
+
   <default revision="android-gs-lynx-5.10-android13-qpr2-b"
     remote="aosp" sync-j="4" />
 
-  <project path="aosp" name="kernel/common" groups="partner"/>
-  <project path="private/gs-google" name="kernel/gs" groups="partner">
+  <project path="private/gs-google" name="Blaster4385/kernel_gs" groups="partner" remote="github" revision="lynx">
     <linkfile dest="build.config" src="build.config.slider"/>
     <linkfile dest="build_slider.sh" src="build_slider.sh"/>
     <linkfile dest="build_mixed.sh" src="build_mixed.sh"/>
