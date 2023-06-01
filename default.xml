@@ -68,7 +68,7 @@
   <project path="private/google-modules/wlan/wcn6740/cnss2" name="kernel/google-modules/wlan/qcom/wcn6740/cnss2" groups="partner" />
   <project path="private/google-modules/wlan/wcn6740/wlan" name="kernel/google-modules/wlan/qcom/wcn6740/wlan" groups="partner" />
   <project path="private/google-modules/video/gchips" name="kernel/google-modules/video/gchips" groups="partner" />
-  <project path="build/kernel" name="kernel/build" groups="partner">
+  <project path="build/kernel" name="kernel/build" groups="partner" clone-depth="1">
     <linkfile dest="tools/bazel" src="kleaf/bazel.sh"/>
     <linkfile dest="WORKSPACE" src="kleaf/bazel.WORKSPACE"/>
     <linkfile dest="build/build.sh" src="build.sh"/>
@@ -87,20 +87,20 @@
   </project>
   <project path="kernel/configs" name="kernel/configs" />
   <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" />
-  <project path="prebuilts/gas/linux-x86" name="platform/prebuilts/gas/linux-x86" />
-  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="partner" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" groups="partner" />
-  <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="partner" />
-  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="partner">
+  <project path="prebuilts/gas/linux-x86" name="platform/prebuilts/gas/linux-x86" clone-depth="1"/>
+  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="partner" clone-depth="1"/>
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" groups="partner" clone-depth="1"/>
+  <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="partner" clone-depth="1"/>
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="partner" clone-depth="1">
     <linkfile dest="build/prebuilts/build-tools" src="."/>
   </project>
-  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" groups="partner">
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" groups="partner" clone-depth="1">
     <linkfile dest="build/prebuilts/kernel-build-tools" src="."/>
   </project>
-  <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" groups="partner"/>
-  <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" groups="partner"/>
-  <project path="external/bazel-skylib" name="platform/external/bazel-skylib" groups="partner"/>
-  <project path="external/stardoc" name="platform/external/stardoc" groups="partner"/>
-  <project path="prebuilts/bazel/linux-x86_64" name="platform/prebuilts/bazel/linux-x86_64" groups="partner"/>
-  <project path="prebuilts/jdk/jdk11" name="platform/prebuilts/jdk/jdk11" groups="partner" />
+  <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" groups="partner" clone-depth="1"/>
+  <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" groups="partner" clone-depth="1"/>
+  <project path="external/bazel-skylib" name="platform/external/bazel-skylib" groups="partner" clone-depth="1"/>
+  <project path="external/stardoc" name="platform/external/stardoc" groups="partner" clone-depth="1"/>
+  <project path="prebuilts/bazel/linux-x86_64" name="platform/prebuilts/bazel/linux-x86_64" groups="partner" clone-depth="1"/>
+  <project path="prebuilts/jdk/jdk11" name="platform/prebuilts/jdk/jdk11" groups="partner" clone-depth="1"/>
 </manifest>
